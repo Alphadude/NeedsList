@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">NeedsList</string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_hospital_detail">HospitalDetailActivity</string>
+
+    <string name="title_activity_first_aid_detail">FirstAidDetailActivity</string>
+    <string name="logout">Logout</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="my_list">My List</string>
+    <string name="my_profile">My Profile</string>
+    <string name="title_activity_my_list">MyListActivity</string>
+    <string name="title_activity_list_detail">ListDetail</string>
+    <string name="title_activity_default_list_detail">DefaultListDetail</string>
+    <string name="you_don_t_have_any_yet_add_one_by_clicking_the_button">You don\'t have any yet, add one by clicking the button</string>
+    <string name="title_activity_add_item">AddItemActivity</string>
+    <string name="enter_name_for_item">Enter Name For Item</string>
+    <string name="title_activity_custom_list">CustomListActivity</string>
+    <string name="title_activity_hospital_near_you">Map</string>
+    <string name="title_activity_hospitals_around_you">HospitalsAroundYou</string>
+
+    <string name="label_phone_auth">Phone Number Authentication</string>
+    <string name="desc_phone_auth">Use a phone number to authenticate with Firebase.</string>
+    <string name="phone_title_text">Phone Number</string>
+
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="status_code_sent">Code Sent</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="title_activity_hospitals">Map</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">FIRST AID!</string>
+    <string name="slide_1_desc">Get access to over 30+ ways on how to administer first aid!</string>
+
+    <string name="slide_2_title">MY LIST</string>
+    <string name="slide_2_desc">Add your own ways to administer first aid in different situation!</string>
+
+
+    <string name="slide_4_title">CHAT</string>
+    <string name="slide_4_desc">Get help from millions of Medical Experts, ready to Attend to you!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="networtError">Oops! Seems like you don\'t have an active network connection. please turn on your network and try again</string>
+    <string name="title_activity_doc_profile">DocProfile</string>
+    <string name="title_activity_regulal_profile">RegulalProfile</string>
+
+    <string name="facebook_app_id">1976044882649712</string>
+    <string name="fb_login_protocol_scheme">fb1976044882649712</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

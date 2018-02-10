@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/tenderboard"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Tender Board" />
+        <item
+            android:id="@+id/transaction"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="sucessful transaction" />
+        <item
+            android:id="@+id/needs"
+            android:icon="@drawable/ic_insert_drive_file_black_24dp"
+            android:title="My Needs" />
+        <item
+            android:id="@+id/sales"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="My Sales" />
+        <item
+            android:id="@+id/buyrequest"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Buy Request" />
+        <item
+            android:id="@+id/sellrequest"
+            android:icon="@drawable/facebook"
+            android:title="Sell request" />
+        <item
+            android:id="@+id/vendorpage"
+            android:icon="@drawable/facebook"
+            android:title="Vendor page" />
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

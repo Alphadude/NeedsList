@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/nav_color"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/facebook"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp"
+        app:civ_fill_color="#e8e8e8"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/name"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Micheal Scofiled"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    <TextView
+        android:id="@+id/usernickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="badass"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/usernumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07032951044"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"/>
+    <TextView
+        android:id="@+id/useremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="alphadude4all@gmail.com"
+        android:textStyle="italic|bold"/>
+
+</LinearLayout>
