@@ -51,7 +51,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/facebook"
+                        android:src="@drawable/ic_person_black"
                         app:civ_border_color="#fff"
                         app:civ_border_width="2dp"
                         app:civ_fill_color="#e8e8e8"/>

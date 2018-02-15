@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:orientation="vertical">
 
@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@color/cardview_dark_background"
             app:cardElevation="10dp"
             app:cardBackgroundColor="@color/white"
             android:layout_marginBottom="10dp"
@@ -35,32 +36,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:src="@mipmap/google_icon"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_person_black"
+                        app:civ_border_color="#fff"
+                        app:civ_border_width="2dp"
+                        app:civ_fill_color="#e8e8e8"/>
 
                     <TextView
                         android:id="@+id/user"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textColor="@color/color_main"
-                        android:textSize="20sp"
+                        android:textSize="15sp"
                         android:layout_marginRight="6dp"
+                        android:paddingTop="20dp"
                         android:text="Mastercraft" />
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
                         android:singleLine="true"
                         android:text="Needs"
                         android:textColor="#000"
                         android:layout_marginBottom="15dp"
-                        android:textSize="25sp"
+                        android:paddingTop="20dp"
+                        android:textSize="15sp"
                         android:textStyle="normal" />
 
                 </LinearLayout>
@@ -68,7 +72,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="60dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -76,7 +80,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginRight="6dp"
                         android:text="Vaseline Crystal Noir"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textColor="@color/color_main"
@@ -84,52 +87,55 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_weight="2"
                     android:orientation="horizontal">
 
 
                     <TextView
                         android:id="@+id/note"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="30dp"
                         android:textColor="#000"
                         android:textStyle="bold"
-                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
                         android:layout_marginRight="6dp"
                         android:text="Additional Note :" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:singleLine="false"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
                         android:text="i need this perfume ASAP please"
                         android:textColor="#000"
-                        android:textSize="16sp"
+                        android:textSize="15sp"
                         android:textStyle="normal" />
 
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
                         android:src="@drawable/ic_location"/>
 
                     <TextView
                         android:id="@+id/location"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="20dp"
+                        android:paddingTop="7dp"
                         android:layout_gravity="center_horizontal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textColor="#000"
-                        android:textSize="16sp"
+                        android:textSize="10sp"
                         android:layout_marginRight="6dp"
                         android:text="Port Harcort, Nigeria" />
 
@@ -143,10 +149,11 @@
                         android:id="@+id/time"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:paddingTop="10dp"
                         android:layout_gravity="center_horizontal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textColor="#000"
-                        android:textSize="16sp"
+                        android:textSize="10sp"
                         android:text="21 minutes ago" />
 
                 </LinearLayout>
@@ -161,9 +168,9 @@
                         android:id="@+id/tender"
                         android:layout_marginLeft="5dp"
                         android:layout_width="0dp"
-                        android:background="@color/color_main"
+                        android:background="@drawable/roundbutton"
                         android:layout_height="match_parent"
-                        android:src="@drawable/ic_location"
+                        android:src="@drawable/ic_tender"
                         android:layout_weight="1" />
 
                     <ImageButton
@@ -172,15 +179,16 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@color/color_main"
+                        android:background="@drawable/roundbutton"
                         android:src="@drawable/ic_map"/>
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_marginLeft="5dp"
                         android:id="@+id/showdistance"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:background="@color/color_main"
+                        android:background="@drawable/roundbutton"
                         android:src="@drawable/ic_directions_walk"
                         android:layout_height="match_parent" />
 
@@ -212,32 +220,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:src="@mipmap/google_icon"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_person_black"
+                        app:civ_border_color="#fff"
+                        app:civ_border_width="2dp"
+                        app:civ_fill_color="#e8e8e8"/>
 
                     <TextView
                         android:id="@+id/user2"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textColor="@color/color_main"
-                        android:textSize="20sp"
+                        android:textSize="15sp"
                         android:layout_marginRight="6dp"
-                        android:text="Badass" />
+                        android:paddingTop="20dp"
+                        android:text="Codebankz" />
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
                         android:singleLine="true"
-                        android:text="Wants to sell"
+                        android:text="wants to sell"
                         android:textColor="#000"
                         android:layout_marginBottom="15dp"
-                        android:textSize="25sp"
+                        android:paddingTop="20dp"
+                        android:textSize="15sp"
                         android:textStyle="normal" />
 
                 </LinearLayout>
@@ -245,7 +256,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="60dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -253,62 +264,90 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginRight="6dp"
-                        android:text="Vaseline Crystal Noir"
+                        android:text="Samsung Galaxy S7"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textColor="@color/color_main"
                         android:textSize="20sp" />
 
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_weight="2"
                     android:orientation="horizontal">
 
 
                     <TextView
                         android:id="@+id/note2"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="30dp"
                         android:textColor="#000"
                         android:textStyle="bold"
-                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
                         android:layout_marginRight="6dp"
                         android:text="Additional Note :" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:singleLine="false"
-                        android:text="i need this perfume ASAP please"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:text="the phone is used but clean"
                         android:textColor="#000"
-                        android:textSize="16sp"
+                        android:textSize="15sp"
                         android:textStyle="normal" />
 
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginRight="6dp"
+                        android:text="Price :" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="N140,000"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
                         android:src="@drawable/ic_location"/>
 
                     <TextView
                         android:id="@+id/location2"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:paddingTop="7dp"
                         android:layout_gravity="center_horizontal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textColor="#000"
-                        android:textSize="16sp"
+                        android:textSize="10sp"
                         android:layout_marginRight="6dp"
-                        android:text="Port Harcourt, Nigeria" />
+                        android:text="Port Harcort, Nigeria" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -318,13 +357,14 @@
 
                     <TextView
                         android:id="@+id/time2"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="30dp"
+                        android:paddingTop="10dp"
                         android:layout_gravity="center_horizontal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textColor="#000"
-                        android:textSize="16sp"
-                        android:text="10days ago" />
+                        android:textSize="10sp"
+                        android:text="10 days ago" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -338,9 +378,9 @@
                         android:id="@+id/tender2"
                         android:layout_marginLeft="5dp"
                         android:layout_width="0dp"
-                        android:background="@color/color_main"
+                        android:background="@drawable/roundbutton"
                         android:layout_height="match_parent"
-                        android:src="@drawable/ic_location"
+                        android:src="@drawable/ic_tender"
                         android:layout_weight="1" />
 
                     <ImageButton
@@ -349,22 +389,206 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@color/color_main"
+                        android:background="@drawable/roundbutton"
                         android:src="@drawable/ic_map"/>
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_marginLeft="5dp"
                         android:id="@+id/showdistance2"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:background="@color/color_main"
+                        android:background="@drawable/roundbutton"
                         android:src="@drawable/ic_directions_walk"
                         android:layout_height="match_parent" />
 
                 </LinearLayout>
 
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView> <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/cardview_dark_background"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_person_black"
+                    app:civ_border_color="#fff"
+                    app:civ_border_width="2dp"
+                    app:civ_fill_color="#e8e8e8"/>
+
+                <TextView
+                    android:id="@+id/user3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/color_main"
+                    android:textSize="15sp"
+                    android:layout_marginRight="6dp"
+                    android:paddingTop="20dp"
+                    android:text="Badass" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="Needs"
+                    android:textColor="#000"
+                    android:layout_marginBottom="15dp"
+                    android:paddingTop="20dp"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/product3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Sony Play Station 4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/color_main"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_marginRight="6dp"
+                    android:text="Additional Note :" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:text="i need this perfume ASAP please"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location"/>
+
+                <TextView
+                    android:id="@+id/location3"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:paddingTop="7dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#000"
+                    android:textSize="10sp"
+                    android:layout_marginRight="6dp"
+                    android:text="Port Harcort, Nigeria" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_access_alarm"/>
+
+                <TextView
+                    android:id="@+id/time3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#000"
+                    android:textSize="10sp"
+                    android:text="21 minutes ago" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/tender3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/roundbutton"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_tender"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/viewmap3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundbutton"
+                    android:src="@drawable/ic_map"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/showdistance3"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundbutton"
+                    android:src="@drawable/ic_directions_walk"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
 
     </LinearLayout>

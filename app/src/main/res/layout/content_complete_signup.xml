@@ -78,11 +78,5 @@
                 android:hint="Enter name"/>
         </android.support.design.widget.TextInputLayout>
 
-
-
-
-
-
-
     </LinearLayout>
 </ScrollView>

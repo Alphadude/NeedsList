@@ -7,9 +7,9 @@
             android:icon="@drawable/ic_assignment_black_24dp"
             android:title="Tender Board" />
         <item
-            android:id="@+id/transaction"
+            android:id="@+id/profile"
             android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="sucessful transaction" />
+            android:title="Profile" />
         <item
             android:id="@+id/needs"
             android:icon="@drawable/ic_insert_drive_file_black_24dp"
@@ -24,24 +24,24 @@
             android:title="Buy Request" />
         <item
             android:id="@+id/sellrequest"
-            android:icon="@drawable/facebook"
+            android:icon="@drawable/ic_access_alarm"
             android:title="Sell request" />
         <item
             android:id="@+id/vendorpage"
-            android:icon="@drawable/facebook"
+            android:icon="@drawable/ic_assignment_black_24dp"
             android:title="Vendor page" />
     </group>
 
-    <item android:title="Social">
+    <item android:title="Extras">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_settings_black_24dp"
-                android:title="Settings" />
+                android:title="@string/action_settings" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_exit_to_app_black_24dp"
-                android:title="Log Out" />
+                android:title="@string/logout" />
         </menu>
     </item>
 

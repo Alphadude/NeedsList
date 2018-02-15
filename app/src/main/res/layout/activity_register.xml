@@ -5,9 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:background="@drawable/background"
     android:scaleType="fitXY"
     tools:context="com.ng.needslist.needslist.Activities.Register">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3000000"/>
 
     <ScrollView
         android:layout_width="match_parent"

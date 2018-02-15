@@ -36,7 +36,7 @@
         <item>@color/dot_dark_screen4</item>
     </array>
 
-    <color name="black_overlay">#000</color>
+    <color name="black_overlay">#fff</color>
     <color name="color_main">#2bbbad</color>
     <color name="customVisibilityColor">#818181</color>
 </resources>

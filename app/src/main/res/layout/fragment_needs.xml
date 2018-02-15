@@ -1,13 +1,40 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.ng.needslist.needslist.Fragments.NeedsFragment">
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/userimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_person_black" />
+
     <TextView
+        android:id="@+id/usernotify"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/userimage"
+        tools:text="Baddass"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="20sp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/list_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernotify"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/userimage"
+        android:textColor="@color/white"
+        android:ellipsize="end"
+        android:singleLine="true"
+        tools:text="Sent you a tender"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="16sp" />
+</RelativeLayout>

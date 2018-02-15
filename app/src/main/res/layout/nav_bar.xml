@@ -16,7 +16,7 @@
         android:id="@+id/imageView"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@drawable/facebook"
+        android:src="@drawable/ic_person_black"
         app:civ_border_color="#fff"
         app:civ_border_width="2dp"
         app:civ_fill_color="#e8e8e8"/>
@@ -28,6 +28,7 @@
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Micheal Scofiled"
         android:textStyle="bold"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
     <TextView
@@ -35,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="badass"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="italic|bold"/>
 
@@ -43,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="07032951044"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="italic|bold"/>
     <TextView
@@ -50,6 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
+        android:textColor="@color/white"
         android:text="alphadude4all@gmail.com"
         android:textStyle="italic|bold"/>
 
