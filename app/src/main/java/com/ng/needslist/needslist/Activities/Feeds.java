@@ -87,7 +87,7 @@ public class Feeds extends  AppCompatActivity {
     }
 
 
-    // Add Fragments to Tabs
+    // Add Fragments to Tabs and its going to be mad thanks to obinna if it works if not your papa
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
         adapter.addFragment(new TenderPage(), "Tender");
